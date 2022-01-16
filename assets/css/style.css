@@ -238,7 +238,7 @@ footer li:hover {
   padding-bottom: 5px;
 }
 
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   #home {
     grid-template: auto/ auto auto;
   }
@@ -253,7 +253,7 @@ footer li:hover {
     font-size: 0.875em;
   }
 }
-@media (max-width: 945px) {
+@media only screen and (max-width: 945px) {
   header span {
     display: none;
   }
@@ -323,7 +323,7 @@ footer li:hover {
     text-align: center;
   }
 }
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   header {
     padding: 10px 80px;
   }
@@ -347,7 +347,7 @@ footer li:hover {
     font-size: 0.625em;
   }
   h1 {
-    font-size: 1.3em;
+    font-size: 2em;
   }
   h2 {
     font-size: 0.9em;
