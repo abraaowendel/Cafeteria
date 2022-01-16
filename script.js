@@ -30,12 +30,12 @@ const produtos = [
 
 ]
 
-const carregarImagens =  (imagens, container) =>{
-    imagens.forEach( conteudo => {
+const carregarImagens =  (produtos, container) =>{
+    produtos.forEach( conteudo => {
         containerItems.innerHTML+= `
         <div class="shop-item">
             <img src="${conteudo.url}" alt="">
-            <p>${conteudo.tipo}</p>
+            <h4>${conteudo.tipo}</h4>
             <div class="value">${conteudo.valor}</div>
             <div class="add">ADICIONAR AO CARRINHO</div>
         </div>
@@ -49,7 +49,7 @@ carregarImagens(produtos, containerItems);
 addEventListener('scroll', function(){
   const navBar = document.querySelector('header')
   const posY = window.scrollY;
-  posY >= 620? navBar.classList.add('bgH') : navBar.classList.remove('bgH')
+  posY >= 560? navBar.classList.add('bgH') : navBar.classList.remove('bgH')
 })
 
 function toogleMenu() {
