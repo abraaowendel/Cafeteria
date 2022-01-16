@@ -243,7 +243,13 @@ footer li:hover {
     grid-template: auto/ auto auto;
   }
   .shop-items {
-    grid-template: auto auto auto/ auto auto;
+    grid-template: repeat(3, auto) / auto auto;
+  }
+  .customers-items {
+    grid-template: repeat(3, auto) / auto;
+  }
+  #about {
+    grid-template: auto auto/ 1fr;
   }
   .shop-item {
     padding: 20px 30px;
@@ -297,18 +303,11 @@ footer li:hover {
   .customers-item p {
     padding: 0 20px;
   }
-  #about {
-    grid-template: auto auto/ 1fr;
-  }
+
   .customers-item span {
     font-size: 1.3em;
   }
-  .shop-items {
-    grid-template: repeat(3, auto) / auto auto;
-  }
-  .customers-items {
-    grid-template: repeat(3, auto) / auto;
-  }
+
   .box {
     padding: 20px 0;
   }
